@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A modern historical website featuring famous historical figures, iconic places, rich imagery, and interactive visual storytelling."
+    />
+    <meta name="theme-color" content="#09111f" />
+    <title>Chronicle Atlas | History Through Images</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-BwDLPgM4.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D4pvrIAm.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" id="top">
+        <nav class="nav container">
+          <a class="brand" href="#home">
+            <span class="brand-mark">CA</span>
+            <span class="brand-text">
+              <strong>Chronicle Atlas</strong>
+              <small>History through images</small>
+            </span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primaryNav"
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-panel" id="primaryNav">
+            <a href="#home">Home</a>
+            <a href="#figures">Figures</a>
+            <a href="#places">Places</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-backdrop" id="heroBackdrop" aria-hidden="true"></div>
+          <div class="hero-overlay" aria-hidden="true"></div>
+
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <span class="eyebrow">Immersive historical storytelling</span>
+              <h1>
+                Explore the people and places that shaped
+                <span>world history</span>.
+              </h1>
+              <p>
+                This visual-first archive pairs iconic portraits with monumental
+                places, turning history into a richly illustrated journey rather
+                than a text-heavy list.
+              </p>
+
+              <div class="hero-actions">
+                <a class="button button-primary" href="#figures">Explore Figures</a>
+                <a class="button button-secondary" href="#places">Discover Places</a>
+              </div>
+
+              <div class="hero-stats">
+                <article>
+                  <strong>8</strong>
+                  <span>historical figures</span>
+                </article>
+                <article>
+                  <strong>8</strong>
+                  <span>legendary places</span>
+                </article>
+                <article>
+                  <strong>17+</strong>
+                  <span>real image moments</span>
+                </article>
+              </div>
+            </div>
+
+            <div class="hero-gallery reveal" id="heroGallery"></div>
+          </div>
+        </section>
+
+        <section class="spotlight-band">
+          <div class="container">
+            <div class="spotlight-shell reveal">
+              <div class="spotlight-copy">
+                <span class="eyebrow">Visual timeline</span>
+                <h2>From imperial courts to ancient cities</h2>
+                <p>
+                  Scroll through curated portraits, sacred skylines, and
+                  surviving monuments presented with modern motion, soft depth,
+                  and responsive image-led design.
+                </p>
+              </div>
+
+              <div class="spotlight-strip" id="spotlightStrip"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="figures">
+          <div class="container">
+            <div class="section-heading reveal">
+              <span class="eyebrow">Famous Historical Figures</span>
+              <h2>Portraits of influential minds, leaders, and visionaries.</h2>
+              <p>
+                Each figure is presented through a real portrait and a concise
+                snapshot of why they continue to matter.
+              </p>
+            </div>
+
+            <div class="cards-grid" id="figuresGrid"></div>
+          </div>
+        </section>
+
+        <section class="section section-alt" id="places">
+          <div class="container">
+            <div class="section-heading reveal">
+              <span class="eyebrow">Historical Places</span>
+              <h2>Great monuments, sacred spaces, and cities of memory.</h2>
+              <p>
+                This gallery highlights globally recognized historical places
+                through real photography, responsive layouts, and large-format
+                image viewing.
+              </p>
+            </div>
+
+            <div class="places-grid" id="placesGrid"></div>
+          </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+          <div class="contact-backdrop" id="contactBackdrop" aria-hidden="true"></div>
+          <div class="container">
+            <div class="contact-card reveal">
+              <span class="eyebrow">Contact</span>
+              <h2>Build history-rich digital experiences with stronger visual storytelling.</h2>
+              <p>
+                For museums, school projects, archives, and heritage showcases,
+                this kind of interface turns historical content into something
+                cinematic, interactive, and memorable.
+              </p>
+
+              <div class="contact-actions">
+                <a class="button button-primary" href="mailto:hello@chronicleatlas.com">
+                  hello@chronicleatlas.com
+                </a>
+                <a class="button button-secondary" href="#top">Back to Top</a>
+              </div>
+
+              <div class="contact-meta">
+                <span>Real imagery from Wikimedia Commons</span>
+                <span>Smooth scroll, modal gallery, and responsive layout</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">
+        &times;
+      </button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+        &#10094;
+      </button>
+      <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+        <img id="lightboxImage" alt="" />
+        <div class="lightbox-copy">
+          <p class="lightbox-kicker" id="lightboxMeta"></p>
+          <h3 id="lightboxTitle"></h3>
+          <p id="lightboxDescription"></p>
+        </div>
+      </div>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+        &#10095;
+      </button>
+    </div>
+
+  </body>
+</html>
